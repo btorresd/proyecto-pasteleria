@@ -1,0 +1,68 @@
+body {
+    font-family: 'Late', sans-serif;
+    margin: 20px;
+    background-color: #fff5e1;
+  }
+  
+  h2 {
+    margin-top: 30px;
+    color: #333;
+  }
+  
+  div {
+    margin-bottom: 15px;
+  }
+  .product, .cart-item {
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    margin: 10px 0; 
+  }
+  div .produc
+  .cart { 
+    margin-top: 30px; 
+  }
+
+  button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: brown;
+    background-color: #ffc0cb;
+    border: 2px solid brownS;
+    border-radius: 8px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  table, th, td {
+    border: 1px solid #aaa;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .navbar-marron {
+  background-color: #8B4513;
+  font-family: 'Lato', sans-serif;
+  border-radius: 12px;
+  padding: 10px 20px;
+}
+
+header{
+    margin-bottom: 30px;
+}
+
+.navbar-marron .nav-link,
+.navbar-marron .navbar-brand {
+  color: white;
+}
+
+h1, h2, .navbar-brand, .navbar-marron{
+    font-family: 'Pacifico', cursive;
+}
