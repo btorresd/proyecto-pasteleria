@@ -9,6 +9,7 @@
 </head>
 <body>
     <header>
+      
         <nav class="navbar navbar-expand-lg navbar-marron">
 
   <div class="container-fluid">
@@ -29,6 +30,30 @@
     </div>
   </div>
 </nav>
-    </header>
+<img class="logo" src="../../img/Logo pasteleria.png" alt="logo pasteleria">    
+<div class="container mt-5">
+  <h2 class="mb-4">Formulario Contacto</h2>
+<div id="mensajes"></div>
+
+    <form id="formContacto">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre Completo</label>
+        <input type="text" id="nombre" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label for ="correo" class="form-label">Correo electrónico</label>
+        <input type="email" id="correo" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label for="contenido" class="form-label">Contenido</label>
+        <input type="text" id="contenido" class="form-control">
+      </div>
+      <div class="btn-contenido">
+        <button type="button" class="btn btn-success" onclick="validarFormularioContacto()">Enviar Mensaje</button>
+      </div>
+      
+    </form>
+    <script src="../js/contacto.js"></script>
 </body>
 </html>

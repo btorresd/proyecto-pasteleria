@@ -7,6 +7,7 @@ body {
   h2 {
     margin-top: 30px;
     color: #333;
+    text-align: center;
   }
   
   div {
@@ -65,4 +66,19 @@ header{
 
 h1, h2, .navbar-brand, .navbar-marron{
     font-family: 'Pacifico', cursive;
+}
+
+.logo {
+  text-align: center;
+  display: block;
+  margin: auto;
+  padding: 20px;
+}
+.btn-contenido{
+
+  padding-top:20px
+}
+
+button.btn.btn-success{
+  margin-left: 0;
 }
