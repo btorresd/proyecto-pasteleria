@@ -66,3 +66,7 @@ header{
 h1, h2, .navbar-brand, .navbar-marron{
     font-family: 'Pacifico', cursive;
 }
+
+.logo {
+  text-align: center;
+}
