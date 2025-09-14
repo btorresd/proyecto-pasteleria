@@ -4,6 +4,8 @@ function validarFormularioInicio(){
  let email = document.getElementById("email").value.trim()
  let clave = document.getElementById("clave").value;
 
+ let mensajesDiv = document.getElementById("mensajes");
+
  // Validaciones
 
  if (email === "") {
@@ -22,6 +24,7 @@ function validarFormularioInicio(){
   const usuarioValido = usuarios.find(
     (usuario) => usuario.email === email && usuario.clave === clave
   );
+
 
   if (usuarioValido) {
     mensajesDiv.innerHTML = `<div class="alert alert-success">✅ Inicio de sesión exitoso</div>`;

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home Administrador - Pastelería Mil Sabores</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.google.com/specimen/Pacifico" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar Administrador -->
+  <nav class="navbar navbar-expand-lg navbar-marron">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="home.html">
+        <img src="../../img/icono-pasteleria.png" alt="Logo Pastelería" width="50" height="50" class="me-2">
+        Panel Administrador
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAdmin">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarAdmin">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="home.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="usuarios.html">Usuarios</a></li>
+          <li class="nav-item"><a class="nav-link" href="../../index.html">Cerrar Sesión</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Encabezado de bienvenida -->
+  <header class="text-center py-5">
+    <h1 class="display-4">Bienvenido, Administrador</h1>
+    <p class="lead">Gestiona productos y usuarios desde este panel.</p>
+  </header>
+
+  <!-- Sección de resumen -->
+  <section class="container my-5">
+    <div class="row text-center">
+      
+      <div class="col-md-4 mb-4">
+        <div class="p-4 border rounded shadow-sm">
+          <h3 id="total-productos">0</h3>
+          <p>Productos Registrados</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="p-4 border rounded shadow-sm">
+          <h3 id="total-usuarios">0</h3>
+          <p>Usuarios Registrados</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de acciones rápidas -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Acciones Rápidas</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-3">
+        <a href="productos.html" class="btn btn-success w-100 py-3">Gestionar Productos</a>
+      </div>
+      <div class="col-md-4 mb-3">
+        <a href="usuarios.html" class="btn btn-success w-100 py-3">Gestionar Usuarios</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 text-center">
+    <p>© 2025 Pastelería Mil Sabores. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,9 +1,9 @@
 function validarFormularioContacto(){
  let errores = [];
  
- let nombre = document.getElementById("nombre")
- let correo = document.getElementById("correo")
- let contenido = document.getElementById("contenido")
+ let nombre = document.getElementById("nombre").value.trim()
+ let correo = document.getElementById("correo").value.trim()
+ let contenido = document.getElementById("contenido").value.trim()
 
  if(nombre === "") {
     errores.push("El nombre no puede estar vacío.")
@@ -18,10 +18,16 @@ if (correo.length > 100){
 }
 if (correo === "") {
     errores.push("El correo no puede estar vacío")
+
+
 }
   // Validacion comentario vacio
   if (contenido === ""){
     errores.push("El comentario no puede estar vacío")
+}
+
+ if (!correo.includes("@duoc.cl") && !correo.includes("@profesor.duoc.cl") && !correo.includes("@gmail.com")) {
+    errores.push("Solo pueden ser correos @duoc.cl, @profesor.duoc.cl o @gmail.com")
 }
 
 // Validacion comentario caracteres
