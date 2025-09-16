@@ -1,12 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion Productos</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestión de Productos - Pastelería Mil Sabores</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.google.com/specimen/Pacifico" rel="stylesheet">
 </head>
 <body>
-    <h1>Gestion productos en proceso</h1>
-    
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-marron">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="home.html">
+        <img src="../../img/icono-pasteleria.png" alt="Logo Pastelería" width="50" height="50" class="me-2">
+        Panel Administrador
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAdmin">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarAdmin">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="usuarios.html">Usuarios</a></li>
+          <li class="nav-item"><a class="nav-link" href="../../index.html">Cerrar Sesión</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Encabezado -->
+  <header class="text-center py-5">
+    <h1 class="display-5">Gestión de Productos</h1>
+    <p class="lead">Administra los productos de la pastelería: agregar, editar o eliminar.</p>
+  </header>
+
+  <!-- Tabla de productos -->
+  <section class="container my-5">
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped text-center align-middle">
+        <thead class="table-dark">
+          <tr>
+            <th>Código</th>
+            <th>Categoría</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-productos">
+          <!-- Los productos se insertan dinámicamente aquí -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Formulario para agregar/editar -->
+  <section class="container my-5">
+    <h2 class="mb-4">Agregar / Editar Producto</h2>
+    <form id="form-producto" class="row g-3">
+      <div class="col-md-3">
+        <label for="codigo" class="form-label">Código</label>
+        <input type="text" id="codigo" class="form-control" required>
+      </div>
+      <div class="col-md-3">
+        <label for="categoria" class="form-label">Categoría</label>
+        <input type="text" id="categoria" class="form-control" required>
+      </div>
+      <div class="col-md-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" id="nombre" class="form-control" required>
+      </div>
+      <div class="col-md-3">
+        <label for="precio" class="form-label">Precio</label>
+        <input type="number" id="precio" class="form-control" required>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-success px-5">Guardar Producto</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 text-center">
+    <p>© 2025 Pastelería Mil Sabores. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="../js/productos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

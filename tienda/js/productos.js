@@ -54,7 +54,7 @@ function agregarAlCarrito(codigo) {
   mostrarCarrito();
 }
 
-// Disminuir cantidad
+// Disminuir cantidad 
 function disminuirCantidad(codigo) {
   const item = carrito.find(i => i.codigo === codigo);
   if (item) {
